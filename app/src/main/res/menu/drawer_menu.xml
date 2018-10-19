@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/authentication">
+            <menu>
+                <item
+                    android:id="@+id/login_moodle"
+                    android:title="@string/login_moodle"
+                    android:icon="@drawable/ic_login"/>
+                <item
+                    android:id="@+id/login_esse3"
+                    android:title="@string/login_esse3"
+                    android:icon="@drawable/ic_login"/>
+            </menu>
+        </item>
+
+        <item android:title="@string/moodle">
+            <menu>
+                <item
+                    android:id="@+id/my_courses"
+                    android:title="@string/my_courses"
+                    android:icon="@drawable/ic_course"/>
+                <item
+                    android:title="@string/home_moodle"
+                    android:id="@+id/moodle"
+                    android:icon="@drawable/ic_moodle"/>
+            </menu>
+        </item>
+            <item android:title="@string/general">
+                <menu>
+                <item
+                    android:title="@string/timetable"
+                    android:id="@+id/timetable"
+                    android:icon="@drawable/ic_timetable"/>
+                <item
+                    android:title="@string/home"
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_home"/>
+                <item
+                    android:title="@string/exams"
+                    android:id="@+id/exam"
+                    android:icon="@drawable/ic_exam"/>
+                </menu>
+            </item>
+
+        <item android:title="@string/social">
+            <menu>
+            <item
+                android:title="@string/telegram"
+                android:id="@+id/telegram"
+                android:icon="@drawable/telegram"/>
+            <item
+                android:title="@string/twitter"
+                android:id="@+id/twitter"
+                android:icon="@drawable/twitter"/>
+            </menu>
+        </item>
+
+        <item android:title="@string/about">
+            <menu>
+            <item
+                android:title="@string/user_info"
+                android:id="@+id/user_info"
+                android:icon="@drawable/ic_user"/>
+            <item
+                android:title="@string/info"
+                android:id="@+id/info"
+                android:icon="@drawable/ic_info"/>
+            </menu>
+        </item>
+
+
+
+    </group>
+
+</menu>

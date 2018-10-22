@@ -50,7 +50,7 @@ public class UserEsse3 {
     public ArrayList<Exam> getPassedExam() {
         ArrayList<Exam> list = new ArrayList<>();
         for (Exam e : exams){
-            if (e.isPassed() && !e.getName().equalsIgnoreCase("Inglese")){
+            if (e.isPassed()){
                 list.add(e);
             }
         }
@@ -87,7 +87,11 @@ public class UserEsse3 {
         int sumGrades = 0;
         int sumCFU = getTotalCFU();
         for (Exam e : getPassedExam()) {
-            sumGrades += e.getData().getVote() * e.getCfu();
+            if (e.getData().getVote() == 0){
+                sumCFU = sumCFU - e.getCfu();
+            } else {
+                sumGrades += e.getData().getVote() * e.getCfu();
+            }
         }
         return ((double) sumGrades) / sumCFU;
     }

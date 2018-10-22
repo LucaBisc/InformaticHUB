@@ -45,6 +45,9 @@ public class Exam {
         if (data.isLode()){
             return "30+";
         }
+        if (data.getVote() == 0){
+            return "IDO";
+        }
         return data.getVote() + "  ";
     }
 
